@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sell Guide Information</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #000;
+            color: white;
+            margin: 0;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .logo {
+            position: fixed;
+            top: 20px;
+            left: 20px; 
+            z-index: 999;
+        }
+
+        .logo img {
+            width: 80px;
+            height: auto;
+        }
+
+        h1 {
+            font-size: calc(1.375rem + 1.5vw);
+            margin-top: 10px;
+            padding-left: 100px; 
+    
+        }
+
+        @media (max-width: 1200px) {
+            h1 {
+                font-size: 2.5rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.5rem;
+            }
+        }
+
+        h2 {
+            font-size: calc(1.325rem + 0.9vw);
+        }
+
+        @media (max-width: 1200px) {
+            h2 {
+                font-size: 2rem;
+            }
+        }
+
+        .blocks-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            background-image: url('./images/your-image.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            margin: 0 auto;
+            padding: 20px;
+            max-width: 1200px;
+        }     
+
+.block {
+    width: calc(50% - 2%);
+    padding: 2%;
+    margin: 0;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.block h2,
+.block p,
+.block img {
+    margin: 2% 0;
+}
+
+@media (min-width: 768px) {
+    .block {
+        width: calc(50% - 2%);
+        padding: 2%;
+    }
+
+    .block h2,
+    .block p,
+    .block img {
+        margin: 2% 0;
+    }
+}
+
+
+
+
+        .block img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 50%;
+            align-self: flex-end;
+        }
+
+        .circle-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 20px 0;
+        }
+
+        .circle {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background-color: #000;
+            margin: 0 5px;
+        }
+
+        @media (min-width: 1024px) {
+            .circle {
+                width: 15px;
+                height: 15px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .circle {
+                width: 10px;
+                height: 10px;
+            }
+        }
+
+        .content-container {
+            max-width: 800px;
+    margin: 0 auto;
+    padding: 1% 1%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+        }
+
+        .important-information {
+            display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+        }
+
+        .line {
+            border-top: 1px solid #ccc;
+            margin: 2% 0;
+        }
+
+        ul {
+            list-style: none;
+            padding-left: 0;
+            margin: 0;
+        }
+
+        li {
+            margin-bottom: 5px;
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            margin: 2% 0;
+        }
+
+        .store-address {
+            margin: 2% 0;
+        }
+
+        .contact-info-container {
+            margin: 2% 0;
+        }
+
+        .social-media {
+            display: flex;
+            justify-content: center;
+            margin: 2% 0;
+        }
+
+        .social-media a {
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        .social-media img {
+            width: 40px;
+            height: 40px;
+        }
+
+        .circular-image {
+            border-radius: 50%;
+            overflow: hidden;
+        }
+
+        .circular-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        @media (max-width: 768px) {
+            .circular-image img {
+                max-width: 75%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .circular-image img {
+                max-width: 50%;
+            }
+        }
+
+        .display-1 {
+            font-size: calc(1.625rem + 4.5vw);
+            font-weight: 300;
+            line-height: 1.2;
+        }
+
+        @media (min-width: 1200px) {
+            .display-1 {
+                font-size: 5rem;
+            }
+        }
+
+        .display-2 {
+            font-size: calc(1.575rem + 3.9vw);
+            font-weight: 300;
+            line-height: 1.2;
+        }
+
+        @media (min-width: 1200px) {
+            .display-2 {
+                font-size: 4.5rem;
+            }
+        }
+
+        .display-3 {
+            font-size: calc(1.525rem + 3.3vw);
+            font-weight: 300;
+            line-height: 1.2;
+        }
+
+        @media (min-width: 1200px) {
+            .display-3 {
+                font-size: 4rem;
+            }
+        }
+
+        .display-4 {
+            font-size: calc(1.475rem + 2.7vw);
+            font-weight: 300;
+            line-height: 1.2;
+        }
+
+        @media (min-width: 1200px) {
+            .display-4 {
+                font-size: 3.5rem;
+            }
+        }
+
+        .display-5 {
+            font-size: calc(1.425rem + 2.1vw);
+            font-weight: 300;
+            line-height: 1.2;
+        }
+
+        @media (min-width: 1200px) {
+            .display-5 {
+                font-size: 3rem;
+            }
+        }
+
+        .display-6 {
+            font-size: calc(1.375rem + 1.5vw);
+            font-weight: 300;
+            line-height: 1.2;
+        }
+
+        @media (min-width: 1200px) {
+            .display-6 {
+                font-size: 2.5rem;
+            }
+        }
+
+        @media (min-width: 1200px) {
+            .blocks-container {
+                display: grid;
+                grid-template-columns: repeat(4, 1fr); 
+                gap: 20px; 
+            }
+
+            .block {
+                width: 100%; 
+                padding: 10% 5%; 
+            }
+        }
+
+        @media (min-width: 768px) and (max-width: 1199px) {
+            .blocks-container {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr); 
+                gap: 20px; 
+            }
+
+            .block {
+                width: 100%; 
+                padding: 15% 5%; 
+            }
+        }
+
+        @media (max-width: 767px) {
+            .blocks-container {
+                display: block; 
+            }
+
+            .block {
+                width: 100%; 
+                padding: 10% 5%; 
+            }
+        }
+
+        .just-text {
+    margin-bottom: 1%; 
+    display: flex;
+    justify-content: center;
+    @media (min-width: 1024px) {
+        p {
+            font-size: 24px;
+        }
+    }
+    @media (max-width: 1023px) and (min-width: 768px) {
+        p {
+            font-size: 18px;
+        }
+    }
+    @media (max-width: 767px) {
+        p {
+            font-size: 10px;
+        }
+    }
+}
+
+.mini-h3 {
+    text-align: center;
+}
+@media (min-width: 1200px) {
+    .text-element {
+        font-size: 36px;
+    }
+}
+
+@media (max-width: 1199px) and (min-width: 768px) {
+    .text-element {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 767px) {
+    .text-element {
+        font-size: 16px;
+    }
+}
+
+
+footer {
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    text-decoration: none; 
+}
+a {
+    color: #ffffff; 
+}
+
+.footer-address, .footer-contact, .footer-social {
+    margin-bottom: 20px;
+}
+
+.footer-address h2, .footer-contact h2, .footer-social h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.footer-address a, .footer-contact a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-social img {
+    width: 32px;
+    height: 32px;
+    margin: 0 10px;
+}
+        
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo" onclick="window.location.href='./index.html';" style="cursor: pointer;">
+            <img src="./images/final_logo-removebg-preview.jpg" alt="Logo">
+        </div>
+        
+        <h1>Sell Guide Information</h1>
+    </header>
+
+    <section class="blocks-container">
+        <div class="block">
+            <h2>Come to Store</h2>
+            <p>Deliver your item(s) to the purchaser and complete the necessary paperwork at the service desk.</p>
+            <img src="./images/1.jpg" alt="Circle Image">
+        </div>
+        <div class="block">
+            <h2>Items Calculation</h2>
+            <p>You can indulge in a shopping in our store experience while our buyer meticulously examines your items, one by one.</p>
+            <img src="./images/2.jpg" alt="Circle Image">
+        </div>
+        <div class="block">
+            <h2>Review the Outcome</h2>
+            <p>You have the option to choose whether to sell all, sell a portion, or cancel altogether.</p>
+            <img src="./images/3.jpg" alt="Circle Image">
+        </div>
+        <div class="block">
+            <h2>Cash in</h2>
+            <p>Follow up the form. Get cash and enjoy.</p>
+            <img src="./images/4.jpg" alt="Circle Image">
+        </div>
+    </section>
+
+    <div class="content-container">
+        <h1 class="important-information">Important Information</h1>
+
+    </div>
+    <div class="line"></div>
+        <p class="just-text">The selling process must be completed on the same day; otherwise, your items will be handled the following day.</p>
+
+    </div>
+    <div class="line"></div>
+        <p class="just-text">You must be 18 years old. If you are below 18, please come with a parent or legal guardian with a valid ID.</p>
+
+    </div>
+    <div class="line"></div>
+        <p class="just-text">We kindly request all customers to provide ID when selling their items. Accepted forms of ID include: Driver’s License, Passport, Military ID, and State ID. Please note that photocopies of IDs are not acceptable, and we will record your ID number on the form for verification purposes.</p>
+
+    </div>
+    <div class="line"></div>
+        <p class="just-text">We buy items that align with our established standards and policies. Declining certain items doesn't necessarily imply they are counterfeit.</p>
+
+    </div>
+    <div class="line"></div>
+            <h3 class="mini-h3">Our policy does not allow us to buy the following items:</h3>
+        <p class="just-text">
+            Clothes/Babywear/ Kimonos/Pajamas/Tuxedos/Rainwear and gear/Swimwear/Skiwear/School uniforms/Work uniforms/Wedding dresses/Undergarments/Wet suits
+        </p>
+    </div>
+    <div class="line"></div>
+            <h3 class="mini-h3">We currently buy items from the following brands:</h3>
+        <ul>
+            <li class="just-text">Louis Vuitton, GUCCI, CELINE, CHANEL, Christian Dior, FENDI, PRADA, PRADA SPORTS, GOYARD, Balenciaga, Saint Laurent (YSL): </li>
+            <li class="just-text">Bags, Shoes, Wallets, Belts, Watches, Accessories, Sunglasses, and Clothes.</li>
+        </ul>
+    </div>
+    <div class="line"></div>
+             <h3 class="mini-h3">We also buy: jewelry, gold, watches and technique (cameras, lenses, phones, computers, headphones, custom toys)</h3>
+        </div>
+        <div class="line"></div>
+
+
+
+        <footer>
+        <h2>Store address</h2>
+        <p><a href="https://www.google.com/maps/place/Mr+Goods+-+Financial+District/@40.7223988,-74.0195262,14z/data=!4m15!1m7!3m6!1s0x89c25b781063de5b:0x8af2245f1501e63b!2sMr+Goods+-+Financial+District!8m2!3d40.7090863!4d-74.0090726!16s%2Fg%2F11tf6hm07l!3m6!1s0x89c25b781063de5b:0x8af2245f1501e63b!8m2!3d40.7090863!4d-74.0090726!15sCghtciBnb29kc1oKIghtciBnb29kc5IBDWpld2VscnlfYnV5ZXLgAQA!16s%2Fg%2F11tf6hm07l?entry=ttu">Mr.Goods Financial District. 24 Maiden Ln, New York, NY 10038</a></p>
+        <p><a href="https://www.google.com/maps/place/7+Maiden+Ln,+New+York,+NY+10038/@40.7096823,-74.0094225,17z/data=!3m1!4b1!4m6!3m5!1s0x89c25a182b4e8465:0xbf68f48510655554!8m2!3d40.7096823!4d-74.0094225!16s%2Fg%2F11c29s09lx?entry=ttu">Mr. Goods Financial District. 7 Maiden Ln, New York, NY 10038</a></p>
+        <p><a href="https://www.google.com/maps/place/119-16+Jamaica+Ave,+Queens,+NY+11418/@40.7001347,-73.8304479,17z/data=!4m16!1m9!3m8!1s0x89c260ae21d4d791:0x201ba4ff953060a3!2s119-16+Jamaica+Ave,+Queens,+NY+11418!3b1!8m2!3d40.6999735!4d-73.830316!10e5!16s%2Fg%2F11bw4bx93z!3m5!1s0x89c260ae21d4d791:0x201ba4ff953060a3!8m2!3d40.6999735!4d-73.830316!16s%2Fg%2F11bw4bx93z?entry=ttu">We Buy Goods 119-16 Jamaica Ave, Queens, NY 11418</a></p>
+    </div>
+    <div class="contact-info-container">
+        <h2>Contact Information</h2>
+        <p>Email: <a href="mailto:mrgoodsnyc@gmail.com">mrgoodsnyc@gmail.com</a></p>
+        <p>Phone Number: <a href="tel:(718) 846-1600">(718) 846-1600</a></p>
+    </div>
+    <div class="social-media">
+        <a href="https://www.instagram.com/webuygoods/?igshid=MjEwN2IyYWYwYw%3D%3D">
+            <img src="./images/20230919003656__fpdl.in__instagram-icon_1057-2227_medium-removebg-preview.png" alt="Instagram">
+        </a>
+        <a href="https://www.tiktok.com/@mrgoodsny?_t=8fIuNmqZW2z&_r=1">
+            <img src="./images/tiktok-icon-1890x2048-ihin0vop.png" alt="Tik-Tok">
+        </a>
+        <a href="https://www.facebook.com/profile.php?id=61550663438460&mibextid=LQQJ4d">
+            <img src="./images/Facebook-logo-blue-circle-large-transparent-png.png" alt="Facebook">
+        </a>
+    </div>
+
+</footer>
+
+</body>
+</html>
